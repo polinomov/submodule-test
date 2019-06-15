@@ -19,3 +19,15 @@ git submodule init
  git submodule
 # to see the sub module sha
   
+  
+  
+############################################
+# To display git sha 
+############################################
+
+git log --pretty=format:'%h' -n 1
+
+# or  
+git log --pretty=format:'%H' -n 1
+#This will show 10 sha and commit messages
+git log --pretty=format:'%H %s' -n 10
