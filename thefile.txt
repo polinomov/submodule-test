@@ -2,11 +2,20 @@ some file from submodule
 
 
 # add submodule and define the master branch as the one you want to track
+# git submodule add -b master [URL to Git repo] 
+# example ( here ../submodule-test is a relative path to the git repo).
+
 git submodule add -b master ../submodule-test
 git submodule init 
 
 # The commands above will create folder submodule-test and file .gitmodules.
-#run
+#If we want to add submodule to the paticular folder add folder name to the command.
+# In this example new folder with name  place-for-submod will be created.
+ git submodule add -b master ../submodule-test place-for-submod 
+
+
+
+#For test run
  git submodule
 # to see the sub module sha
   
