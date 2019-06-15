@@ -1,5 +1,6 @@
-some file from submodule
-
+############################################
+# Submodules
+############################################
 
 # add submodule and define the master branch as the one you want to track
 # git submodule add -b master [URL to Git repo] 
@@ -9,15 +10,20 @@ git submodule add -b master ../submodule-test
 git submodule init 
 
 # The commands above will create folder submodule-test and file .gitmodules.
-#If we want to add submodule to the paticular folder add folder name to the command.
-# In this example new folder with name  place-for-submod will be created.
- git submodule add -b master ../submodule-test place-for-submod 
+# If we want to add submodule to the paticular folder add folder name to the command.
+# In the example  below new folder with name  place-for-submod will be created.
+
+git submodule add -b master ../submodule-test place-for-submod 
 
 
 
 #For test run
  git submodule
 # to see the sub module sha
+
+# After git clone call
+git submodule update -i 
+# this command will actually upadte the submod. data
   
   
   
@@ -31,3 +37,11 @@ git log --pretty=format:'%h' -n 1
 git log --pretty=format:'%H' -n 1
 #This will show 10 sha and commit messages
 git log --pretty=format:'%H %s' -n 10
+
+#########################################
+# To checkout remote branch with tracking
+#########################################
+
+ git checkout -b some-branch-for-test remotes/origin/some-branch-for-test
+ 
+ 
