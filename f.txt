@@ -4,3 +4,4 @@ commit c
 commit c
 this is branch a
 commit a on branch a
+another commit on a
