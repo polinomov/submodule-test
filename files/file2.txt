@@ -1,1 +1,4 @@
+
 file2
+
+commit 1 in master
